@@ -1,0 +1,98 @@
+
+//for creation {reqcuriter}
+###
+PUT  http://localhost:5000/auth/signup
+Content-Type: application/json
+
+{
+
+"fullName":"satyendra", 
+"email":"prajapatisatyendra.com", 
+"phoneNumber":11111111, 
+"password":"12345"
+
+}
+
+//for creation {company}
+###
+PUT  http://localhost:5000/auth/signupCompany
+Content-Type: application/json
+
+{
+
+"fullName":"satyendra", 
+"email":"a@mai.in", 
+"phoneNumber":222222222, 
+"companyName":"backend.io",
+"password":"12345"
+
+}
+
+
+//for login
+###
+POST http://localhost:5000/auth/login
+Content-Type: application/json
+
+{
+
+"email":"kumarsatyendra9354@gmail.com", 
+"password":"AjayKumar"
+
+}
+
+//for forgot password
+
+
+###
+POST http://localhost:5000/auth/postResetPassword
+Content-Type: application/json
+
+{
+
+"email":"prajapatisatyendra07@gmail.com", 
+
+"email":"admin@t1.com", 
+"password":"12345"
+
+}
+
+
+
+
+//find banner data
+###
+GET  http://localhost:5000/admin/banner
+
+
+
+//banner update api
+###
+PUT  http://localhost:5000/admin/banner/635dbbd04f60e3dfd70a7fdf
+Content-Type: application/json
+
+{
+"title":"Banner", 
+"desc":"1234566666",
+"longDesc":"lorem hai mreee"
+}
+
+
+
+
+//user api for find {recruiter}
+###
+GET  http://localhost:5000/admin/users
+
+
+
+
+
+//user api for find {company}
+###
+GET  http://localhost:5000/recruiter/recruitordetails/6389a29d70ee44b59195d519
+
+
+###
+GET  http://localhost:5000/admin/adminDeshboradCount
+
